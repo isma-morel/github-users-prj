@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import './base/var';
+* {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto",sans-serif;
+    font-weight: lighter;
+}
+
+body {
+    background-color: nth($colors , 1 );
+    overflow-x: hidden;
+}
+
+header {
+    background-color: nth($colors , 2 );
+    border-bottom: 1px solid nth($colors , 2 );
+    div {
+        .container-nav {
+            .container-li {
+                .link-item {
+                    text-decoration: none;
+                    color: nth($colors , 5 );
+                    transition: .3s all ease;
+                    font-weight: 500;
+                    &:hover {
+                        color: nth($colors , 6 );
+                    }
+                }
+            }
+        }
+        .logo-container {
+            span {
+                color: nth($colors , 5 );
+                font-size: 30px;
+                &:hover {
+                    color: nth($colors , 6 );
+                }
+            }
+        }
+    }
+}
+
+main {
+    #search-users {
+        margin: 20px 10px 0 20px;
+        div {
+            #username {
+                text-align: left;
+                width: 400px;
+                height: 25px;
+                color: nth($colors , 5 );
+                background-color: none;
+                box-shadow: none;
+                background-color: nth($colors , 2 );
+                border-radius: 6px;
+                border: 1px solid nth($colors , 1 );
+                font-weight: bold;
+                transition: .3s ease all;
+                &:hover {
+                    color: nth($colors , 6 );
+                }
+            }
+            #btn-search {
+                width: 30px;
+                height: 30px;
+                background-color: none;
+                box-shadow: none;
+                background-color: nth($colors , 2 );
+                border-radius: 2px;
+                border: 1px solid nth($colors , 1 );
+                color: nth($colors , 5 );
+                &:hover {
+                    color: nth($colors , 6 );
+                }
+            }
+        }
+        #print-user {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .img-avatar {
+                width: 250px;
+                height: 250px;
+                border-radius: 5px;
+            }
+            .user-name {
+                color: nth($colors , 5 );
+                font-weight: bold;
+                margin: 20px 0;
+            }
+            .user-twitter {
+                font-style: italic;
+                color: nth($colors , 4 );
+                margin: 20px 0 30px 0;
+            }
+            .repo-container {
+                width: 100%;
+                background-color: #0d1117;
+                border-color: nth($colors , 7 );
+                padding: 20px;
+                margin: 20px 0;
+                border-radius: 5px;
+                .repo-name {
+                    a {
+                        text-decoration: none;
+                        color: nth($colors , 5 );
+                        font-weight: bold;
+                        transition: .3s ease all;
+                        &:hover {
+                            color: nth($colors , 7 );
+                        }
+                    }
+                }
+                .repo-url {
+                    a {
+                        font-style: italic;
+                        transition: .3s ease all;
+                        &:hover {
+                            color: nth($colors , 7 )
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

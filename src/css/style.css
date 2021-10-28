@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+* {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}
+
+body {
+  background-color: #24292D;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #2B3137;
+  border-bottom: 1px solid #2B3137;
+}
+header div .container-nav .container-li .link-item {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: 0.3s all ease;
+  font-weight: 500;
+}
+header div .container-nav .container-li .link-item:hover {
+  color: rgba(240, 246, 252, 0.7);
+}
+header div .logo-container span {
+  color: #FFFFFF;
+  font-size: 30px;
+}
+header div .logo-container span:hover {
+  color: rgba(240, 246, 252, 0.7);
+}
+
+main #search-users {
+  margin: 20px 10px 0 20px;
+}
+main #search-users div #username {
+  text-align: left;
+  width: 400px;
+  height: 25px;
+  color: #FFFFFF;
+  background-color: none;
+  box-shadow: none;
+  background-color: #2B3137;
+  border-radius: 6px;
+  border: 1px solid #24292D;
+  font-weight: bold;
+  transition: 0.3s ease all;
+}
+main #search-users div #username:hover {
+  color: rgba(240, 246, 252, 0.7);
+}
+main #search-users div #btn-search {
+  width: 30px;
+  height: 30px;
+  background-color: none;
+  box-shadow: none;
+  background-color: #2B3137;
+  border-radius: 2px;
+  border: 1px solid #24292D;
+  color: #FFFFFF;
+}
+main #search-users div #btn-search:hover {
+  color: rgba(240, 246, 252, 0.7);
+}
+main #search-users #print-user {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #search-users #print-user .img-avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+}
+main #search-users #print-user .user-name {
+  color: #FFFFFF;
+  font-weight: bold;
+  margin: 20px 0;
+}
+main #search-users #print-user .user-twitter {
+  font-style: italic;
+  color: #0D74E7;
+  margin: 20px 0 30px 0;
+}
+main #search-users #print-user .repo-container {
+  width: 100%;
+  background-color: #0d1117;
+  border-color: #30363d;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+main #search-users #print-user .repo-container .repo-name a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  transition: 0.3s ease all;
+}
+main #search-users #print-user .repo-container .repo-name a:hover {
+  color: #30363d;
+}
+main #search-users #print-user .repo-container .repo-url a {
+  font-style: italic;
+  transition: 0.3s ease all;
+}
+main #search-users #print-user .repo-container .repo-url a:hover {
+  color: #30363d;
+}
+
+/*# sourceMappingURL=style.css.map */
